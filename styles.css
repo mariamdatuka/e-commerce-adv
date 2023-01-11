@@ -362,7 +362,7 @@ CARD N1
 
 .card-one{
     width:37rem;
-    height:46rem;
+    height:48rem;
     border: 1.5px solid var(--second-bg-color);
     background: linear-gradient(to right, #ffffff 0%, #D7E6FF 100%);
     border-radius: 1.8rem;
@@ -476,9 +476,9 @@ CARD N1
 }
 
 .remain-box{
-    width:34rem;
+    width:33rem;
     height:8rem;
-    border:1px solid var(--light-gray);
+    border:1.5px solid  var(--light-font-color);
     border-radius: 1.8rem;
     display:flex;
     flex-direction: column;
@@ -494,19 +494,27 @@ CARD N1
     display:flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    color:var(--main-bg-color);
+    font-family: 'MontDark';
+    border-bottom:1.5px solid  var(--light-font-color);
 }
 
 .green-box{
     border-radius:1.8rem;
     background-color: var(--lightest-green);
-    width:19rem;
+    width:18rem;
     height:3.5rem;
+    border-right:1.5px solid  var(--light-font-color);
+    position:relative;
+    z-index:999;
 }
 
 .white-box{
+  position:absolute;
+  right:4.8%;
   background-color: var(--main-font-color);
-  width:28rem;
+  width:16rem;
   height:3.5rem;
   border-top-right-radius: 1.8rem;
   border-bottom-right-radius: 1.8rem;
@@ -516,4 +524,48 @@ CARD N1
     display:flex;
     align-items: center;
     justify-content: center;
+    gap:1rem;
 }
+
+.remain-item img{
+    width:1.8rem;
+}
+
+.remain-item p{
+    font-size: 1.2rem;
+    color:var(--main-bg-color);
+    font-family: 'MontDark';
+}
+
+
+.get-offer{
+    width:33rem;
+    height:5rem;
+    border:none;
+    color:var(--main-font-color);
+    font-family: 'MontDark';
+    background-color: var(--second-bg-color);
+    border-radius: 5rem;
+    font-size: 1.8rem;
+    box-shadow:2px 2px 5px 1px rgba(25, 122, 255, 0.5);
+    cursor:pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.get-offer:hover{
+  transform: scale(1.05);
+}
+
+.payment-icons{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+    margin: 2rem 0;
+}
+
+
+/*****************
+    SLIDER
+******************/
+
