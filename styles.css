@@ -39,14 +39,16 @@ html{
     --light-blue:rgba(77, 145, 207, 0.15);
     --dark-gray: #787979;
     --light-gray:#647AA0;
-
-
+    --lightes-gray:#CBCED6;
+    --dark-pink:#AC5780;
   }
 
 body{
     font-family: 'MontSemiBold';
     font-size:1.4rem;
     background-color: var(--transparent-bg-color);
+    height:100vh;
+    width:100vw;
 }
 
 .sale-title{
@@ -360,14 +362,14 @@ body{
 CARD N1
 ************************/
 
-.card-one{
+.card{
     width:37rem;
-    height:48rem;
     border: 1.5px solid var(--second-bg-color);
     background: linear-gradient(to right, #ffffff 0%, #D7E6FF 100%);
     border-radius: 1.8rem;
     padding:2rem;
     position:relative;
+    margin-bottom:5rem;
 }
 
 .products{
@@ -379,6 +381,7 @@ CARD N1
 .arrowdown{
     position:absolute;
     right:12%;
+    top:5%;
 }
 
 .basic-info{
@@ -401,6 +404,8 @@ CARD N1
     font-size:1.1rem;
     font-family: 'MontRegular';
 }
+
+
 
 .off-box{
     display:flex;
@@ -561,11 +566,323 @@ CARD N1
     align-items: center;
     justify-content: center;
     gap:1rem;
-    margin: 2rem 0;
+    margin-top:2rem;
 }
 
 
 /*****************
+    CARD-TWO
+******************/
+
+.best-value{
+    width:10rem;
+    height:2.5rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5rem;
+    background-color:var(--dark-pink);
+    color:var(--main-font-color);
+    font-size:1.1rem;
+    font-family: 'MontRegular';
+}
+
+
+/*****************
+    CARD-THREE
+******************/
+
+.product-one{
+   width:13rem;
+}
+
+.basic-info-two{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:2rem;
+}
+
+.last-magic{
+    margin-top:2rem;
+}
+
+.last-buy{
+    padding-top:3rem;
+}
+
+
+/*****************************
+    SUBTITLE_FOR_REVIEW_SECTION
+*******************************/
+
+.title-3{
+    padding:2rem 0;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:0.5rem;
+    margin-bottom:2rem;
+}
+
+.title-3 p {
+    font-size:2.8rem;
+    color:var(--main-bg-color);
+}
+
+.title-3 span{
+    font-family: "MontDark";
+    color:var(--second-bg-color);
+    font-size: 2.6rem ;
+}
+
+
+/*****************
+    REVIEW_SECTION
+******************/
+
+.write-review{
+    padding:0 2rem;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.stars-2{
+    display:flex;
+    align-items:start;
+    flex-direction: column;
+    gap:0.5rem;
+}
+
+.stars-2 p{
+    font-size:1.4rem;
+    color:var(--main-bg-color);
+}
+
+.add-review{
+    width:13rem;
+    height:3.5rem;
+    border:1px solid var(--main-bg-color);
+    font-size: 1.4rem;
+    font-family: "MontRegular";
+    background-color: var(--main-font-color);
+    border-radius: 5px;
+}
+
+/*****************
     SLIDER
 ******************/
+
+.slider-section{
+    padding:1rem 1.5rem;
+    width:32rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider-wrapper{
+    width:300%;
+    min-height: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+    transition: 1s;
+}
+
+.slider{ 
+    width:30rem;
+    min-height: 100%;
+    background-color: var(--main-font-color);
+    border: 1px solid #E9E9E9;
+    margin: 1rem 0;
+    border-radius: 1rem;
+}
+
+.main-wrapper{
+    padding: 0 2rem;
+}
+
+.wrapper-2{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top:1rem;
+}
+
+.username{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    gap:0.5rem;
+}
+
+.username span{
+    color:var(--main-bg-color);
+    font-size:1.3rem;
+}
+
+.verifired-mark{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    align-self:start;
+    gap:0.5rem;
+}
+
+.verifired-mark span{
+    font-size: 1.1rem;
+    color:var(--light-green);
+}
+
+.text{
+    font-size:1.3rem;
+    line-height:2.6rem;
+    color:var(--third-font-color);
+    font-family: "MontRegular";
+    margin-top:2rem;
+    padding-bottom:4rem;
+}
+
+.buttons{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+    margin: 2rem 0;
+}
+
+.btn{
+    width:1.4rem;
+    height:1.4rem;
+    border-radius: 50%;
+    background-color: var(--lightes-gray);
+    cursor: pointer;
+}
+
+.active{
+    background-color: var(--second-bg-color);
+}
+
+
+/******************************
+          FAQ SECTION
+********************************/
+.subtitle-3{
+    padding:2rem 0;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:0.5rem;
+    margin-bottom:2rem;
+}
+
+.subtitle-3 p {
+    font-size:2.8rem;
+    color:var(--main-font-color);
+}
+
+.subtitle-3 span{
+    font-family: "MontDark";
+    color: var(--main-font-color);
+    font-size: 2.6rem ;
+}
+
+.subtitle-3 img{
+    width:13rem;
+}
+
+.main-container{
+    display:flex;
+    flex-direction: column;
+}
+
+.avatar-img{
+    margin-bottom:2rem;
+}
+
+.avatar-img img{
+    width:38rem;
+    border-bottom-left-radius:6px;
+    border-bottom-right-radius:6px;
+}
+
+.faq-section{
+    background-color: var(--main-bg-color);
+    padding:0 2rem;
+}
+
+.question button{
+    width: 100%;
+    background-color: #31548E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15px;
+    border: 1px solid #31548E;
+    border-radius: 6px;
+    outline: none;
+    font-size: 1.6rem;
+    color: var(--main-font-color);
+    cursor: pointer;
+    font-family: 'MontDark';
+}
+
+.answer{
+    font-size: 1.4rem;
+    max-height:0;
+    opacity: 0;
+    line-height: 1.5;
+    transition: all 0.6s ease;
+    color: #AECCFF;
+    font-family: "MontRegular";
+    padding:1rem;
+    border-bottom: 1px solid  #31548E;
+    border-left:1px solid  #31548E;
+    border-right: 1px solid  #31548E;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    margin-bottom:1rem;
+}
+
+.d-arrow{
+    transition: transform 0.5s ease-in ;
+    color:var(--main-font-color);
+}
+
+.show{
+    max-height: fit-content;
+    opacity: 1;
+}
+
+.question button .d-arrow.rotate{
+    transform: rotate(180deg);
+}
+
+ .question button.border{
+    border-bottom-left-radius:0;
+    border-bottom-right-radius:0;
+}
+
+.see-more {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  gap:0.5rem;
+  cursor: pointer;
+  padding:2rem;
+}
+
+.see-more p{
+    color:var(--main-font-color);
+    font-size: 1.6rem;
+}
+
+.see-more img{
+  width:1.3rem;
+}
 
