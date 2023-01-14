@@ -1197,10 +1197,14 @@ CARD N1
   
 }
 
-@media screen and (min-width:1440px){
+@media screen and (min-width:1439px){
     .down{
         left:67%;
         top:27%;
+    }
+
+    .img-box {
+      right:-1%;
     }
 }
 
