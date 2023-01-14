@@ -62,8 +62,8 @@
 
 .arrow{
     position:absolute;
-    left:30%;
-    top:23%;
+    left:28%;
+    top:35%;
 }
 
 .down{
@@ -72,14 +72,14 @@
 
 .shadow-1{
     position:absolute;
-    right:25%;
-    top:28%;
+    right:30%;
+    top:45%;
 }
 
 .shadow-2{
     position: absolute;
     right:15%;
-    top:30%;
+    top:50%;
 }
 
 .description{
@@ -1229,6 +1229,17 @@ CARD N1
  }
 
 
+ @media screen and (max-width:416px){
+    .arrow{
+        left:28%;
+        top:36%;
+    }
+
+    .title{
+        font-size:2.2rem;
+    }
+ }
+
  @media screen and (max-width:396px){
     .description{
         font-size:1.3rem;
@@ -1238,16 +1249,12 @@ CARD N1
         gap:1rem;
     }
 
-    .title{
-        font-size:2.2rem;
-    }
-
     .img-box img{
         width:16rem;
     }
 
     .arrow{
-        top:22%;
+        top:35%;
         left:28%;
     }
 
@@ -1270,13 +1277,13 @@ CARD N1
     }
 
     .shadow-1{
-        top:26%;
+        top:45%;
         right:25%;
     }
 
     .shadow-2{
         right:15%;
-        top:28%;
+        top:47%;
     }
 
  }
@@ -1287,18 +1294,8 @@ CARD N1
     }
 
     .arrow{
-        top:20%;
+        top:33%;
         left:28%;
-    }
-
-    .shadow-1{
-        top:25%;
-        right:25%;
-    }
-
-    .shadow-2{
-        right:15%;
-        top:27%;
     }
    
     .title-3 p{
@@ -1313,5 +1310,9 @@ CARD N1
 
     .img-box img{
         width:15rem;
+    }
+
+    .shadow-1{
+        top:43%;
     }
  }

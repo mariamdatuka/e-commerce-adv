@@ -47,5 +47,6 @@ body{
     font-family: 'MontSemiBold';
     font-size:1.4rem;
     background-color: var(--transparent-bg-color);
-    min-height:100vh;
+    height:100vh;
+    overflow-x: hidden;
 }
