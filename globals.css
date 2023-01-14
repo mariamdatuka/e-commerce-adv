@@ -1,0 +1,51 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+@font-face{
+    font-family: 'MontRegular';
+    src:url('./fonts/Mont-Regular.ttf');
+}
+
+@font-face{
+    font-family: 'MontDark';
+    src: url('./fonts/Mont-Bold.ttf');
+}
+
+@font-face {
+    font-family: "MontSemiBold";
+    src: url('./fonts/Mont-SemiBold.ttf');
+}
+
+
+:root {
+    --main-bg-color: #11346F;
+    --transparent-bg-color:#F5FDFF;
+    --second-bg-color:#197AFF;
+    --main-font-color:#fff;
+    --second-font-color:#213786;
+    --light-font-color:#AECCFF;
+    --third-font-color:#262626;
+    --dark-green:#57AC73;
+    --normal-green:#BFF5BE;
+    --lightest-green:#BCF5E3;
+    --light-green:#89C25F;
+    --light-blue:rgba(77, 145, 207, 0.15);
+    --dark-gray: #787979;
+    --light-gray:#647AA0;
+    --lightes-gray:#CBCED6;
+    --dark-pink:#AC5780;
+  }
+
+body{
+    font-family: 'MontSemiBold';
+    font-size:1.4rem;
+    background-color: var(--transparent-bg-color);
+    min-height:100vh;
+}

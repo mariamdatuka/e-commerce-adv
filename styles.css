@@ -1,55 +1,5 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-}
+@import url('/globals.css');
 
-html{
-    font-size: 62.5%;
-}
-
-@font-face{
-    font-family: 'MontRegular';
-    src:url('./fonts/Mont-Regular.ttf');
-}
-
-@font-face{
-    font-family: 'MontDark';
-    src: url('./fonts/Mont-Bold.ttf');
-}
-
-@font-face {
-    font-family: "MontSemiBold";
-    src: url('./fonts/Mont-SemiBold.ttf');
-}
-
-
-:root {
-    --main-bg-color: #11346F;
-    --transparent-bg-color:#F5FDFF;
-    --second-bg-color:#197AFF;
-    --main-font-color:#fff;
-    --second-font-color:#213786;
-    --light-font-color:#AECCFF;
-    --third-font-color:#262626;
-    --dark-green:#57AC73;
-    --normal-green:#BFF5BE;
-    --lightest-green:#BCF5E3;
-    --light-green:#89C25F;
-    --light-blue:rgba(77, 145, 207, 0.15);
-    --dark-gray: #787979;
-    --light-gray:#647AA0;
-    --lightes-gray:#CBCED6;
-    --dark-pink:#AC5780;
-  }
-
-body{
-    font-family: 'MontSemiBold';
-    font-size:1.4rem;
-    background-color: var(--transparent-bg-color);
-    height:100vh;
-    width:100vw;
-}
 
 .sale-title{
     background-color: var(--main-bg-color);
@@ -62,70 +12,9 @@ body{
     color:var(--main-font-color);
 }
 
-
-/***********************
-  HEADER SECTION FOR DESKTOP!
-***********************/
-
-.header{
-    padding:1.5rem 7rem;
-    box-shadow:2px 2px 2px 1px rgba(0, 0, 0, 0.1);
-}
-
-.nav-box{
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.nav-items{
-    display:flex;
-    gap:5rem;
-}
-
-.nav-items a{
-    text-decoration: none;
-    font-size:1.6rem;
-    color:var(--main-bg-color);
-    opacity:75%;
-    transition:all 0.3s ease-in-out;
-}
-
-.nav-items a:hover{
-    opacity: 1;
-}
-
-.order-btn{
-    color:var(--main-font-color);
-    font-family: 'MontDark', sans-serif;
-    width:16rem;
-    height:5rem;
-    border-radius: 5rem;
-    border:none;
-    background-color: var(--second-bg-color);
-    cursor:pointer;
-}
-
-@media screen and (max-width:420px){
-   .nav-items{
-    display:none;
-   }
-
-   .order-btn{
-    display:none;
-   }
-
-    .nav-box{
-      justify-content: center;
-    }
-
-
-}
-
 /***********************
   DESCRIPTION SECTION
 ***********************/
-
 
 .description-section{
     padding: 1rem 2rem;
@@ -142,9 +31,12 @@ body{
 }
 
 .title{
+    display:flex;
+    flex-direction: column;
     font-size: 2.4rem;
     color:var(--second-font-color);
     line-height: 1.2;
+    position: relative;
 }
 
 .title span{
@@ -152,20 +44,44 @@ body{
     font-family: 'MontDark';
 }
 
+.details{
+    font-size:1.8rem;
+    color:var(--third-font-color);
+    font-family: 'MontRegular';
+    width:70rem;
+    margin: 2rem 0;
+}
+
+
+
 .img-box{
     align-self: end;
 }
 
-
-.images{
-    display:flex;
-    gap:2rem;
-    align-items: flex-start;
-    justify-content: flex-start;
+.img-box img{
+    width:18rem;
 }
 
 .arrow{
-    align-self:center;
+    position:absolute;
+    left:30%;
+    top:25%;
+}
+
+.down{
+    display:none;
+}
+
+.shadow-1{
+    position:absolute;
+    right:10%;
+    top:23%;
+}
+
+.shadow-2{
+    position: absolute;
+    right:25%;
+    top:22%;
 }
 
 .description{
@@ -207,6 +123,10 @@ body{
     flex-direction: column;
 }
 
+.lists{
+    display:none;
+}
+
 .get-item{
     border:none;
     background-color: var(--second-bg-color);
@@ -220,8 +140,13 @@ body{
     align-self: center;
 }
 
+.offer-feed{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .offer{
-    align-self: center;
     display:flex;
     align-items: center;
     justify-content: center;
@@ -323,6 +248,7 @@ body{
     line-height: 1.3;
 }
 
+
 /***********************
   CARD
 ***********************/
@@ -362,6 +288,12 @@ body{
 CARD N1
 ************************/
 
+.cards-container{
+    display:flex;
+    flex-direction: column;
+    gap:5rem;
+}
+
 .card{
     width:37rem;
     border: 1.5px solid var(--second-bg-color);
@@ -369,7 +301,6 @@ CARD N1
     border-radius: 1.8rem;
     padding:2rem;
     position:relative;
-    margin-bottom:5rem;
 }
 
 .products{
@@ -432,6 +363,10 @@ CARD N1
 .price-box{
     display:flex;
     gap:1.5rem;
+}
+
+.plus{
+    display:none;
 }
 
 .discount{
@@ -525,6 +460,10 @@ CARD N1
   border-bottom-right-radius: 1.8rem;
 }
 
+.white-box-3{
+    display:none;
+}
+
 .remain-item{
     display:flex;
     align-items: center;
@@ -596,6 +535,10 @@ CARD N1
    width:13rem;
 }
 
+.card-three{
+    padding-top:4rem;
+}
+
 .basic-info-two{
     display:flex;
     flex-direction: column;
@@ -609,13 +552,25 @@ CARD N1
 }
 
 .last-buy{
-    padding-top:3rem;
+    padding-top:2rem;
 }
 
+.btnn{
+    margin-top:2rem;
+}
+
+.money-back, .additional{
+    display:none;
+}
 
 /*****************************
     SUBTITLE_FOR_REVIEW_SECTION
 *******************************/
+.whiteline{
+    display:flex;
+    flex-direction: column;
+    align-items:end;
+}
 
 .title-3{
     padding:2rem 0;
@@ -670,6 +625,7 @@ CARD N1
     font-family: "MontRegular";
     background-color: var(--main-font-color);
     border-radius: 5px;
+    cursor:pointer;
 }
 
 /*****************
@@ -700,6 +656,15 @@ CARD N1
     border: 1px solid #E9E9E9;
     margin: 1rem 0;
     border-radius: 1rem;
+}
+
+.slider .avt{
+    height:15rem;
+    width:28rem;
+}
+
+.slider-four{
+    display:none;
 }
 
 .main-wrapper{
@@ -741,10 +706,11 @@ CARD N1
 .text{
     font-size:1.3rem;
     line-height:2.6rem;
+    height:24rem;
     color:var(--third-font-color);
     font-family: "MontRegular";
     margin-top:2rem;
-    padding-bottom:4rem;
+    text-align: left;
 }
 
 .buttons{
@@ -796,6 +762,12 @@ CARD N1
     width:13rem;
 }
 
+.faq-q{
+    display:flex;
+    flex-direction: column;
+    gap:0.5
+}
+
 .main-container{
     display:flex;
     flex-direction: column;
@@ -803,6 +775,10 @@ CARD N1
 
 .avatar-img{
     margin-bottom:2rem;
+}
+
+.whole{
+    display:none;
 }
 
 .avatar-img img{
@@ -816,6 +792,8 @@ CARD N1
     padding:0 2rem;
 }
 
+
+
 .question button{
     width: 100%;
     background-color: #31548E;
@@ -826,7 +804,7 @@ CARD N1
     border: 1px solid #31548E;
     border-radius: 6px;
     outline: none;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     color: var(--main-font-color);
     cursor: pointer;
     font-family: 'MontDark';
@@ -886,3 +864,370 @@ CARD N1
   width:1.3rem;
 }
 
+
+
+
+
+/***********************
+  HEADER SECTION FOR DESKTOP!
+***********************/
+
+.header{
+    padding:1.5rem 7rem;
+    box-shadow:2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+.nav-box{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-items{
+    display:flex;
+    gap:5rem;
+}
+
+.nav-items a{
+    text-decoration: none;
+    font-size:1.6rem;
+    color:var(--main-bg-color);
+    opacity:75%;
+    transition:all 0.3s ease-in-out;
+}
+
+.nav-items a:hover{
+    opacity: 1;
+}
+
+.order-btn{
+    color:var(--main-font-color);
+    font-family: 'MontDark', sans-serif;
+    width:16rem;
+    height:5rem;
+    border-radius: 5rem;
+    border:none;
+    background-color: var(--second-bg-color);
+    cursor:pointer;
+}
+
+@media screen and (min-width:421px){
+
+    .title-box{
+        align-items: start;
+        justify-content: flex-start;
+        position:relative;
+    }
+
+    .description-section{
+        padding:1rem 7rem;
+    }
+
+    .details{
+        display:block;
+    }
+
+    .title{
+        margin-top:2rem;
+    }
+
+    .title p{
+        font-size: 4rem;
+    }
+
+    .title p br{
+        display:none;
+    }
+
+    .images{
+        align-self: end;
+        padding-right:2rem;
+    }
+
+    .img-box{
+        position:absolute;
+        right:-3%;
+        top:120%;
+    }
+
+    .img-box img{
+        width:37rem;
+    }
+     
+    .arrow{
+        display:none;
+    }
+
+    .down{
+        display:block;
+        left:75%;
+        top:27%;
+    }
+
+    .description{
+        display:none;
+    }
+
+   .container{
+    display:flex;
+    flex-direction:row;
+  }
+
+  .container span{
+    font-size: 1.6rem;
+  }
+
+    .hide{
+        display:block;
+        display:inline-flex;
+        flex-direction: row;
+    }
+ 
+    .container span br{
+        display:none;
+    }
+
+    .shadows{
+        display:none;
+    }
+
+    .wrapper{
+        padding:1rem 7rem;
+        gap:1rem;
+        justify-content: space-between;
+    }
+
+    .subtitle h1, .subtitle h2{
+        font-size:3.7rem;
+    }
+
+    .cards-container{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .money-back, .additional{
+        display:block;
+    }
+
+    .money-back{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        gap:0.5rem;
+    }
+
+    .money-back span{
+        font-size: 1.2rem;
+        color:var(--main-bg-color);
+        font-family: 'MontDark';
+    }
+
+    .price-box-3{
+        flex-direction: column;
+        gap:0.5rem;
+        align-items: center;
+    }
+
+    .plus{
+        display:block
+    }
+
+    .discount{
+        font-size: 3.2rem;
+    }
+
+    .card-three{
+        padding-top:0;
+        order:2;
+    }
+
+    .card-two{
+        order:4;
+    }
+
+    .card-one{
+        order:3;
+    }
+   
+    .btnn{
+        margin-top:6rem;
+    }
+
+    .white-box{
+        display:none;
+    }
+
+    .white-box-3{
+    display:block;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    color:var(--main-bg-color);
+    font-family: 'MontDark';
+    border-bottom:1.5px solid  var(--light-font-color);
+    position:absolute;
+    right:4.8%;
+    background-color: var(--main-font-color);
+    width:16rem;
+    height:3.5rem;
+    border-top-right-radius: 1.8rem;
+    border-bottom-right-radius: 1.8rem;
+    }
+
+    .title-3{
+        flex-direction: row;
+        padding-top:5rem;
+    }
+
+    .title-3 p{
+        font-size: 3.7rem;
+    }
+
+    .title-3 span{
+        font-size: 3.5rem;
+    }
+
+    .write-review{
+        padding: 0 7rem;
+    }
+
+    .stars-2{
+        flex-direction: row;
+    }
+
+    .buttons{
+        display:none;
+    }
+
+    .slider-section{
+        overflow:visible;
+        padding:1rem 0;
+    }
+
+    .slider-wrapper{
+        padding: 0 4rem;
+        gap:2rem;
+        justify-content: start;
+    }
+
+    .slider-four{
+        display:block;
+    }
+
+    .subtitle-3{
+        flex-direction: row;
+        gap:1rem;
+        padding-top:4rem;
+    }
+  
+    .subtitle-3 p{
+        font-size:3.7rem;
+    }
+
+    .faq-q span{
+        font-size: 3.5rem;
+    }
+
+    .main-container{
+        flex-direction: row;
+        justify-content: center;
+        gap:5rem;
+    }
+
+    .half{
+        display:none;
+    }
+
+    .whole{
+        display:block;
+    }
+
+    .question-button{
+        font-size:1.6rem;
+    }
+
+    /****GRID****/
+
+   .grid{
+    align-self:flex-start;
+    margin-top:3rem;
+    background-color:var(--light-blue);
+    padding:2rem 1rem;
+    border-radius: 10px;
+   }
+
+   .icon-box{
+    padding:0 1rem;
+    position:relative;
+   }
+
+   .icon-box:not(:last-child):after{
+    content: "";
+    position: absolute;
+    height: 100px;
+    width: 1px;
+    background: #CEE2FF;
+    right: -16%;
+  }
+
+   .icon-box p br{
+    display:none;
+   }
+
+   .icon-box div p{
+     font-size:1.1rem;
+     color:var(--third-font-color);
+     font-family: 'MontRegular';
+   }
+
+   .type{
+    font-size:1.4rem;
+   }
+
+   .lists{
+    display:inline-flex;
+    flex-direction: column;
+    gap:0.5rem;
+   }
+
+   .get-item{
+    align-self: start;
+    margin-top:2rem;
+   }
+
+   .offer-feed{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+   }
+
+  
+}
+
+@media screen and (max-width:421px){
+    .nav-items{
+     display:none;
+    }
+ 
+    .order-btn{
+     display:none;
+    }
+ 
+     .nav-box{
+       justify-content: center;
+     }
+ 
+     .details{
+         display:none;
+     }
+ 
+     .hide{
+         display:none;
+     }
+ 
+
+     
+ }
