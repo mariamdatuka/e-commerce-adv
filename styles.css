@@ -27,7 +27,7 @@
     display:flex;
     align-items: center;
     justify-content: center;
-    gap:2rem;
+    gap:1rem;
 }
 
 .title{
@@ -52,8 +52,6 @@
     margin: 2rem 0;
 }
 
-
-
 .img-box{
     align-self: end;
 }
@@ -65,7 +63,7 @@
 .arrow{
     position:absolute;
     left:30%;
-    top:25%;
+    top:23%;
 }
 
 .down{
@@ -74,14 +72,14 @@
 
 .shadow-1{
     position:absolute;
-    right:10%;
-    top:23%;
+    right:25%;
+    top:28%;
 }
 
 .shadow-2{
     position: absolute;
-    right:25%;
-    top:22%;
+    right:15%;
+    top:30%;
 }
 
 .description{
@@ -209,7 +207,6 @@
     padding-right:2rem;
 }
 
-
 /***********************
   CARDS SECTION
 ***********************/
@@ -248,7 +245,6 @@
     line-height: 1.3;
 }
 
-
 /***********************
   CARD
 ***********************/
@@ -283,7 +279,6 @@
     width:26rem;
 }
 
-
 /************************
 CARD N1
 ************************/
@@ -291,6 +286,7 @@ CARD N1
 .cards-container{
     display:flex;
     flex-direction: column;
+    align-items: center;
     gap:5rem;
 }
 
@@ -335,8 +331,6 @@ CARD N1
     font-size:1.1rem;
     font-family: 'MontRegular';
 }
-
-
 
 .off-box{
     display:flex;
@@ -508,7 +502,6 @@ CARD N1
     margin-top:2rem;
 }
 
-
 /*****************
     CARD-TWO
 ******************/
@@ -525,7 +518,6 @@ CARD N1
     font-size:1.1rem;
     font-family: 'MontRegular';
 }
-
 
 /*****************
     CARD-THREE
@@ -592,7 +584,6 @@ CARD N1
     color:var(--second-bg-color);
     font-size: 2.6rem ;
 }
-
 
 /*****************
     REVIEW_SECTION
@@ -733,7 +724,6 @@ CARD N1
     background-color: var(--second-bg-color);
 }
 
-
 /******************************
           FAQ SECTION
 ********************************/
@@ -771,6 +761,7 @@ CARD N1
 .main-container{
     display:flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .avatar-img{
@@ -791,8 +782,6 @@ CARD N1
     background-color: var(--main-bg-color);
     padding:0 2rem;
 }
-
-
 
 .question button{
     width: 100%;
@@ -864,10 +853,6 @@ CARD N1
   width:1.3rem;
 }
 
-
-
-
-
 /***********************
   HEADER SECTION FOR DESKTOP!
 ***********************/
@@ -910,6 +895,10 @@ CARD N1
     background-color: var(--second-bg-color);
     cursor:pointer;
 }
+
+
+/**********MEDIA QUERIES
+**********************************/
 
 @media screen and (min-width:421px){
 
@@ -960,8 +949,8 @@ CARD N1
 
     .down{
         display:block;
-        left:75%;
-        top:27%;
+        left:77%;
+        top:35%;
     }
 
     .description{
@@ -1006,6 +995,7 @@ CARD N1
         align-items: center;
         justify-content: center;
     }
+
 
     .money-back, .additional{
         display:block;
@@ -1207,7 +1197,16 @@ CARD N1
   
 }
 
-@media screen and (max-width:421px){
+@media screen and (min-width:1440px){
+    .down{
+        left:67%;
+    }
+}
+
+
+/********MOBILE********/
+
+@media screen and (max-width:420px){
     .nav-items{
      display:none;
     }
@@ -1227,7 +1226,92 @@ CARD N1
      .hide{
          display:none;
      }
- 
+ }
 
-     
+
+ @media screen and (max-width:396px){
+    .description{
+        font-size:1.3rem;
+    }
+
+    .title-box{
+        gap:1rem;
+    }
+
+    .title{
+        font-size:2.2rem;
+    }
+
+    .img-box img{
+        width:16rem;
+    }
+
+    .arrow{
+        top:22%;
+        left:28%;
+    }
+
+    .avatar-img .half{
+        width:33rem;
+    }
+
+    .question button{
+        font-size:1.3rem;
+        padding:2rem 1rem;
+        align-items: start;
+    }
+
+    .see-more{
+        padding-top:0;
+    }
+
+    .cards-section{
+        padding:1rem 1rem;
+    }
+
+    .shadow-1{
+        top:26%;
+        right:25%;
+    }
+
+    .shadow-2{
+        right:15%;
+        top:28%;
+    }
+
+ }
+
+ @media screen and (max-width:380px){
+    .title{
+        font-size:2rem;
+    }
+
+    .arrow{
+        top:20%;
+        left:28%;
+    }
+
+    .shadow-1{
+        top:25%;
+        right:25%;
+    }
+
+    .shadow-2{
+        right:15%;
+        top:27%;
+    }
+   
+    .title-3 p{
+        font-size: 2.6rem;
+    }
+ }
+
+ @media screen and (max-width:376px) {
+    .question button{
+        padding:2rem 0.5rem;
+    }
+
+    .img-box img{
+        width:15rem;
+    }
  }
