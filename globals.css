@@ -48,5 +48,4 @@ body{
     font-size:1.4rem;
     background-color: var(--transparent-bg-color);
     height:100vh;
-    overflow-x: hidden;
 }

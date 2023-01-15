@@ -1,5 +1,7 @@
-/******CARD SLIDER ******/
 
+'use strict';
+
+/******CARD SLIDER ******/
  //selectors
 const wrapper = document.querySelector('.slider-wrapper');
 const indicators = [...document.querySelectorAll('.btn')];
@@ -9,7 +11,7 @@ let currentTestimonial = 0;
 indicators.forEach((item, i) => {
     item.addEventListener('click', () => {
         indicators[currentTestimonial].classList.remove('active');
-        wrapper.style.marginLeft = `-${100 * i}%`;
+        wrapper.style.marginLeft = `-${80 * i}%`;
         item.classList.add('active');
         currentTestimonial = i;
     })
@@ -30,3 +32,4 @@ buttons.forEach( button =>{
         icon.classList.toggle('rotate');
     })
 } )
+

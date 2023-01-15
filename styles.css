@@ -625,7 +625,7 @@ CARD N1
 
 .slider-section{
     padding:1rem 1.5rem;
-    width:32rem;
+    width:100%;
     position: relative;
     overflow: hidden;
 }
@@ -634,8 +634,7 @@ CARD N1
     width:300%;
     min-height: 100%;
     display:flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
     gap:1rem;
     transition: 1s;
 }
@@ -651,7 +650,7 @@ CARD N1
 
 .slider .avt{
     height:15rem;
-    width:28rem;
+    width:100%;
 }
 
 .slider-four{
@@ -1100,7 +1099,9 @@ CARD N1
     .slider-wrapper{
         padding: 0 4rem;
         gap:2rem;
-        justify-content: start;
+        width:100%;
+        align-items: center;
+        justify-content: center;
     }
 
     .slider-four{
